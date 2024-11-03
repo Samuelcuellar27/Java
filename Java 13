@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class java
+{
+    public static void main(String[] args){
+        Scanner tec = new Scanner(System.in);
+        System.out.println("Write a year");
+        int x = tec.nextInt();
+        if (x % 4 == 0 && x % 100 != 0){
+            System.out.println("leap year");
+        }
+        else if (x % 400 == 0){
+            System.out.println("leap year");
+        }
+        else if (x % 4 != 0){
+            System.out.println("nat year");
+        }
+    }
+}
