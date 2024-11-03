@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class java
+{
+    public static void main(String[] args){
+        Scanner tec = new Scanner(System.in);
+        System.out.println("Write an integer");
+        int x = tec.nextInt();
+        System.out.println("Write an integer");
+        int y = tec.nextInt();
+        boolean si = x > y;
+        boolean no = x < y;
+        if (si == true && no == false){
+            System.out.println(x + " > " + y);
+        }
+        else if (no == true && si == false){
+            System.out.println(x + " < " + y);
+        }
+        else if (x == y){
+            System.out.println(x + " = " + y);
+        }
+        if (x < 0){
+            System.out.println(x + "negative");
+        }
+        if (x == 0){
+            System.out.println(x + "zero");
+        }
+        if (x > 0){
+            System.out.println(x + "positive");
+        }
+        if (y < 0){
+            System.out.println(y + "negative");
+        }
+        if (y == 0){
+            System.out.println(y + "zero");
+        }
+        if (y > 0){
+            System.out.println(y + "positive");
+        }
+    }
+}
