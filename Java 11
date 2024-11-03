@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class java
+{
+    public static void main(String[] args){
+        Scanner teclado = new Scanner(System.in);
+        System.out.println("Write an integer:");
+        int x = teclado.nextInt();
+        if (x < 0){
+            System.out.println("negative");
+        }
+        if (x == 0){
+            System.out.println("zero");
+        }
+        if (x > 0){
+            System.out.println("positive");
+        }
+    }
+}
