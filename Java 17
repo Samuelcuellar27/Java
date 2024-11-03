@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class java
+{
+    public static void main(String[] args){
+        Scanner tec = new Scanner(System.in);
+        System.out.println("Money:");
+        Double x = tec.nextDouble();
+        if (x > 100000){
+            Double a = x*0.3;
+            System.out.println("Tax is " + a);
+        }
+        if (x <= 100000 && x >= 50000){
+            Double b = x*0.2;
+            System.out.println("Tax is " + b);
+        }
+        if (x < 50000){
+            Double c = x*0.1;
+            System.out.println("Tax is " + c);
+        }
+    }
+}
