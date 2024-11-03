@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class java
+{
+    public static void main(String[] args){
+        Scanner tec = new Scanner(System.in);
+        System.out.println("Give your BMI:");
+        Double x = tec.nextDouble();
+        if (x < 18.5){
+            System.out.println("Underweight");
+        }
+        if (x >= 18.5 && x < 24.9){
+            System.out.println("Normal");
+        }
+        if (x >= 25 && x < 29.9){
+            System.out.println("Overweight");
+        }
+        if (x >= 30){
+            System.out.println("Obese");
+        }
+    }
+}
