@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class java
+{
+    public static void main(String[] args){
+        Scanner tec = new Scanner(System.in);
+        System.out.println("Give the number of units of energy consumed BMI:");
+        int x = tec.nextInt();
+        if (x <= 100){
+            int a = x*1;
+            System.out.println("Energy = "+ a);
+        }
+        if (x >= 101 && x <= 200){
+            int b = 100*1;
+            Double c = (x-100)*1.5;
+            Double d = b+c;
+            System.out.println("Energy = "+ d);
+        }
+        if (x >= 201 && x <= 300){
+            int e = 100*1;
+            Double f = (x-100)*2.0;
+            Double g = e+f;
+            System.out.println("Energy = "+ g);
+        }
+        if (x >= 301){
+            int h = 100*1;
+            Double i = (x-100)*3.0;
+            Double j = h+i;
+            System.out.println("Energy = "+ j);
+        }
+    }
+}
