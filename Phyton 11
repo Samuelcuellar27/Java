@@ -1,8 +1,0 @@
-print("Write integer")
-x=int(input())
-if x < 0:
-  print("negative")
-if x == 0:
-  print("zero")
-if x > 0:
-  print("positive")
