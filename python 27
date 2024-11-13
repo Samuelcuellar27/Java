@@ -1,0 +1,3 @@
+cadena = "Hola" 
+for caracter in cadena:
+    print(caracter)
